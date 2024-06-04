@@ -83,7 +83,117 @@ void controlManualCar()
     {
         stop();
     }
-    // Add more conditions for different movements based on sensor inputs
+    else if ((ReadS1 == WHITE) && (ReadS2 == BLACK) && (ReadS3 == BLACK) && (ReadS4 == BLACK) && (ReadS5 == WHITE))
+    {
+        stop();
+    }
+    else if ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == BLACK) && (ReadS4 == WHITE) && (ReadS5 == WHITE))
+    {
+
+        while ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == BLACK) && (ReadS4 == WHITE) && (ReadS5 == WHITE))
+        {
+            moveforward(constSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == WHITE) && (ReadS2 == BLACK) && (ReadS3 == BLACK) && (ReadS4 == WHITE) && (ReadS5 == WHITE))
+    {
+        while ((ReadS1 == WHITE) && (ReadS2 == BLACK) && (ReadS3 == BLACK) &&
+               (ReadS4 == WHITE) && (ReadS5 == WHITE))
+        {
+            TurnStopRight(sSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == WHITE) && (ReadS2 == BLACK) && (ReadS3 == WHITE) &&
+             (ReadS4 == WHITE) && (ReadS5 == WHITE))
+    {
+        while ((ReadS1 == WHITE) && (ReadS2 == BLACK) && (ReadS3 == WHITE) &&
+               (ReadS4 == WHITE) && (ReadS5 == WHITE))
+        {
+            TurnStopRight(sSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == BLACK) && (ReadS2 == WHITE) && (ReadS3 == WHITE) &&
+             (ReadS4 == WHITE) && (ReadS5 == WHITE))
+    {
+        while ((ReadS1 == BLACK) && (ReadS2 == WHITE) && (ReadS3 == WHITE) &&
+               (ReadS4 == WHITE) && (ReadS5 == WHITE))
+        {
+            TurnStopRight(sSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == BLACK) && (ReadS2 == BLACK) && (ReadS3 == WHITE) &&
+             (ReadS4 == WHITE) && (ReadS5 == WHITE))
+    {
+        while ((ReadS1 == BLACK) && (ReadS2 == BLACK) && (ReadS3 == WHITE) &&
+               (ReadS4 == WHITE) && (ReadS5 == WHITE))
+        {
+            TurnStopRight(sSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == BLACK) && (ReadS2 == BLACK) && (ReadS3 == BLACK) &&
+             (ReadS4 == WHITE) && (ReadS5 == WHITE))
+    {
+        while ((ReadS1 == BLACK) && (ReadS2 == BLACK) && (ReadS3 == BLACK) &&
+               (ReadS4 == WHITE) && (ReadS5 == WHITE))
+        {
+            TurnStopRight(sSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == BLACK) &&
+             (ReadS4 == BLACK) && (ReadS5 == WHITE))
+    {
+        while ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == BLACK) &&
+               (ReadS4 == BLACK) && (ReadS5 == WHITE))
+        {
+            TurnStopLeft(sSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == WHITE) &&
+             (ReadS4 == BLACK) && (ReadS5 == WHITE))
+    {
+        while ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == WHITE) &&
+               (ReadS4 == BLACK) && (ReadS5 == WHITE))
+        {
+            TurnStopLeft(sSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == WHITE) &&
+             (ReadS4 == WHITE) && (ReadS5 == BLACK))
+    {
+        while ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == WHITE) &&
+               (ReadS4 == WHITE) && (ReadS5 == BLACK))
+        {
+            TurnStopLeft(sSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == WHITE) &&
+             (ReadS4 == BLACK) && (ReadS5 == BLACK))
+    {
+        while ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == WHITE) &&
+               (ReadS4 == BLACK) && (ReadS5 == BLACK))
+        {
+            TurnStopLeft(sSpeed);
+            ir();
+        }
+    }
+    else if ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == BLACK) && (ReadS4 == BLACK) && (ReadS5 == BLACK))
+    {
+        while ((ReadS1 == WHITE) && (ReadS2 == WHITE) && (ReadS3 == BLACK) &&
+               (ReadS4 == BLACK) && (ReadS5 == BLACK))
+        {
+            TurnStopLeft(sSpeed);
+            ir();
+        }
+    }
 }
 
 // Function to move the car forward
